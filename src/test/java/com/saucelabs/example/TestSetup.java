@@ -45,7 +45,7 @@ public class TestSetup {
       return new Object[][]{
     		  //Verify that your account has access to the devices below
              new Object[]{"iOS", "iPhone 7", "10"},
-             new Object[]{"iOS", "iPhone 8", "11"}
+             new Object[]{"iOS", "iPhone SE", ""}
       };
   }  
   
@@ -59,6 +59,7 @@ public class TestSetup {
       capabilities.setCapability("name",  methodName);
 //      capabilities.setCapability("appiumVersion", "1.7.2");
       capabilities.setCapability("appiumVersion", "1.13.0");
+      driver.getCapabilities().getCapability("testobject_test_report_url");
       
       driver.set(new IOSDriver<WebElement>(
               new URL(System.getenv("APPIUM_URL")),
