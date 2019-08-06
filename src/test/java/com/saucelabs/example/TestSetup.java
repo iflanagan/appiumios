@@ -94,12 +94,21 @@ public class TestSetup {
     @AfterMethod
     public void tearDown(ITestResult result) {
     	IOSDriver driver = getWebDriver();
-    	reporter = new ResultReporter();
+    	/*
+    	reporter = new ResultReporter();   	
         boolean success = result.isSuccess();
         String sessionId = driver.getSessionId().toString();
 
         reporter.saveTestStatus(sessionId, success);
         driver.quit();
+        **/
+    	
+    	((JavascriptExecutor) webDriver.get()).executeScript("sauce:job-result=" + (result.isSuccess() ? "passed" : "failed"));
+    	  webDriver.get().quit();
+    }
+    
+    protected void annotate(String text) {
+        ((JavascriptExecutor) webDriver.get()).executeScript("sauce:context=" + text);
     }
     
     /**
