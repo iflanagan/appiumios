@@ -109,9 +109,11 @@ public class TestSetup {
     	  **/
     }
     
+    /*
     protected void annotate(String text) {
         ((JavascriptExecutor) webDriver.get()).executeScript("sauce:context=" + text);
     }
+    **/
     
     /**
      * @return the {@link WebDriver} for the current thread
