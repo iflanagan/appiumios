@@ -26,9 +26,7 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/**
- * Created by grago on 28/02/2017.
- */
+
 public class TestSetup {
 
     private ResultReporter reporter;
@@ -57,9 +55,11 @@ public class TestSetup {
       capabilities.setCapability("platformVersion", platformVersion);
       capabilities.setCapability("platformName", platformName);
       capabilities.setCapability("name",  methodName);
-//      capabilities.setCapability("appiumVersion", "1.7.2");
       capabilities.setCapability("appiumVersion", "1.13.0");
     //  driver.getCapabilities().getCapability("testobject_test_report_url");
+      capabilities.setCapability("recordDeviceVitals", true);
+      capabilities.setCapability("cacheId", "testDemo");
+      capabilities.setCapability("noReset", true);
       
       driver.set(new IOSDriver<WebElement>(
               new URL(System.getenv("APPIUM_URL")),
@@ -81,6 +81,16 @@ public class TestSetup {
         MobileElement resultField = (MobileElement)(driver.findElement(By.xpath("//XCUIElementTypeStaticText|//UIAApplication[1]/UIAWindow[1]/UIAStaticText[1]")));
 
         /* Add two and two. */
+        buttonTwo.click();
+        buttonPlus.click();
+        buttonThree.click();
+        driver.getScreenshotAs(OutputType.FILE);
+        buttonEquals.click();
+        driver.getScreenshotAs(OutputType.FILE);
+        
+        /* Check if within given time the correct result appears in the designated field. */
+        (new WebDriverWait(driver, 30)).until(ExpectedConditions.textToBePresentInElement(resultField, "5"));
+        
         buttonTwo.click();
         buttonPlus.click();
         buttonThree.click();

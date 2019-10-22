@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.saucelabs.example.TestSetup" duration-ms="39003" started-at="2019-10-22T14:38:15Z" finished-at="2019-10-22T14:38:54Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="39003" started-at="2019-10-22T14:38:15Z" finished-at="2019-10-22T14:38:54Z">
+      <class name="com.saucelabs.example.TestSetup">
+        <test-method status="PASS" signature="IanFtwoPlusThreeOperation(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.saucelabs.example.TestSetup@62ee68d8]" name="IanFtwoPlusThreeOperation" duration-ms="37099" started-at="2019-10-22T09:38:15Z" data-provider="devices" finished-at="2019-10-22T09:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPhone SE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void com.saucelabs.example.TestSetup.IanFtwoPlusThreeOperation(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IanFtwoPlusThreeOperation -->
+        <test-method status="PASS" signature="IanFtwoPlusThreeOperation(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.saucelabs.example.TestSetup@62ee68d8]" name="IanFtwoPlusThreeOperation" duration-ms="35168" started-at="2019-10-22T09:38:15Z" data-provider="devices" finished-at="2019-10-22T09:38:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPhone 7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void com.saucelabs.example.TestSetup.IanFtwoPlusThreeOperation(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IanFtwoPlusThreeOperation -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.example.TestSetup@62ee68d8]" name="tearDown" is-config="true" duration-ms="2955" started-at="2019-10-22T09:38:51Z" finished-at="2019-10-22T09:38:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=IanFtwoPlusThreeOperation status=SUCCESS method=TestSetup.IanFtwoPlusThreeOperation(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.saucelabs.example.TestSetup@62ee68d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucelabs.example.TestSetup@62ee68d8]" name="tearDown" is-config="true" duration-ms="1882" started-at="2019-10-22T09:38:53Z" finished-at="2019-10-22T09:38:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=IanFtwoPlusThreeOperation status=SUCCESS method=TestSetup.IanFtwoPlusThreeOperation(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.saucelabs.example.TestSetup@62ee68d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saucelabs.example.TestSetup -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.saucelabs.example.TestSetup -->
+</testng-results>
