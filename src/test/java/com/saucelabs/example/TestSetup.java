@@ -55,7 +55,7 @@ public class TestSetup {
       capabilities.setCapability("platformVersion", platformVersion);
       capabilities.setCapability("platformName", platformName);
       capabilities.setCapability("name",  methodName);
-      capabilities.setCapability("appiumVersion", "1.13.0");
+    //  capabilities.setCapability("appiumVersion", "1.13.0");
     //  driver.getCapabilities().getCapability("testobject_test_report_url");
       capabilities.setCapability("recordDeviceVitals", true);
       capabilities.setCapability("cacheId", "testDemo");
